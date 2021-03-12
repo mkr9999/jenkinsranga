@@ -1,18 +1,18 @@
-agent any
-stages {
+pipeline {
+  agent any
+  stages {
   stage('Build') {
     steps {
       // One or more steps need to be included within the steps block.
-      echo "Build"
+      echo "Build Stage"
     }
   }
 
   stage('Test') {
     steps {
       // One or more steps need to be included within the steps block.
-      echo "Test"
+      echo "Test Stage"
     }
   }
-
 }
-
+}
