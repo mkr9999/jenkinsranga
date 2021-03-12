@@ -13,7 +13,8 @@ pipeline {
       echo "Build Stage"
       echo "PATH - $PATH"
       echo "JOB_NAME - $env.JOB_NAME"
-
+      sh 'mvn --version'
+      sh 'docker --version'
     }
   }
 
